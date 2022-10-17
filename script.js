@@ -7,12 +7,13 @@ const currentTime = () => {
         minute: 'numeric',
         second: 'numeric',
         hour12: true,
-        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    
     };
     const time = new Intl.DateTimeFormat('en-US', options).format(new Date());
     console.log(time);
     clockElement.textContent = time;
-    timezoneElement.textContent = options.timezone;
+    timezoneElement.textContent = options.timeZone;
 };
 
 currentTime();

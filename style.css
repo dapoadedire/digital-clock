@@ -20,6 +20,7 @@ main {
 }
 .container {
   text-align: center;
+  width: 100%;
 }
 
 
@@ -32,3 +33,16 @@ h2:last-child {
   font-size: 6em;
   font-weight: 400;
 }
+
+
+@media screen and (max-width: 600px) {
+  h2:first-child {
+    font-size: 4em;
+  }
+  h2:last-child {
+    font-size: 4em;
+  }
+  
+}
+
+

@@ -11,7 +11,6 @@ const currentTime = () => {
     
     };
     const time = new Intl.DateTimeFormat('en-US', options).format(new Date());
-    console.log(time);
     clockElement.textContent = time;
     timezoneElement.textContent = options.timeZone;
 };
